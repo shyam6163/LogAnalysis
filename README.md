@@ -1,4 +1,4 @@
-# Udacity Log Analysis Project
+# Project 3: Udacity Log Analysis Project
 
 This is the project from udacity NanoDegree : [Fullstack Web Developer](https://classroom.udacity.com/nanodegrees/nd004/dashboard/overview)
 
