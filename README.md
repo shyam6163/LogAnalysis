@@ -32,7 +32,7 @@ This files contains all configuration (Python3, Postgresql,PIP8 etc) setup for o
 
 ### Process of executing the project:
 1. Goto Vagrant folder
-2. Open command prompt (or) Git Bash 
+2. Open command prompt (or) Git Bash  
 3. Run **vagrant up** - to start the commandline virtual machine for the first it may take very long time depending on your internet connection
 4. Run **vagrant ssh** command to enter into the virtual machine
 5. Then run the project **python loganalysis_project.py**
