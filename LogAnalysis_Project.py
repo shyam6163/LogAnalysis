@@ -3,8 +3,6 @@
 import psycopg2
 
 db_name = "news"
-
-
 def run_query(query1):
     """Database Connection Setup for Query Executions"""
     db = psycopg2.connect('dbname=' + db_name)
@@ -28,10 +26,8 @@ def top_articles():
         ORDER BY total DESC
         LIMIT 3;
     """
-
     # Run Query
     results = run_query(query1)
-
     # Print Results
     print("\n######################################")
     print(' VIEWS THE TOP MOST THREE ARTICLES  :')
@@ -40,8 +36,6 @@ def top_articles():
     for i in results:
         print('(' + str(count) + ') "' + i[0] + '" :: ' + str(i[1]) + " views")
         count += 1
-
-
 def top_authors():
     """TOP THREE MOST AUTHORS"""
 
@@ -57,7 +51,6 @@ def top_authors():
         ORDER BY total DESC
         LIMIT 3;
     """
-
     # Run Query
     results = run_query(query1)
 
@@ -65,7 +58,6 @@ def top_authors():
     print("\n######################################")
     print('TOP THREE MOST AUTHORS:')
     print("######################################")
-
     count = 1
     for i in results:
         print('(' + str(count) + ') ' + i[0] + ' :: ' + str(i[1]) + " views")
