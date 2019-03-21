@@ -1,43 +1,82 @@
-# Project 3: Udacity Log Analysis Project by Ch.Shyam Prasad
+# Project 3: Logs Analysis Project
+### by Ch.Shyam Prasad
 
-This is the project from udacity NanoDegree : [Fullstack Web Developer](https://classroom.udacity.com/nanodegrees/nd004/dashboard/overview)
+Logs Analysis Project, part of the Udacity [Full Stack Web Developer
+Nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004).
 
-#### Your task is to create a reporting tool that prints out reports (in plain text) 
+## What it is and does
 
-based on the data in the database. This reporting tool is a
-Python program using the psycopg2 module to connect to the database. 
+A Reporting page that prints out reports in a plain text format based on the data in the database.This reporting tool is a python program using the `psycopg2` module to connect to the database.
 
-### Here is your Tasks to Answer:-
-1. **What are the most popular three articles of all time?** Which
-  articles have been accessed the most? Present this information as a
-  sorted list with the most popular article at the top.  
-2. **Who are the most popular article authors of all time?** That is,
-   when you sum up all of the articles each author has written, which
-   authors get the most page views? Present this as a sorted list with
-   the most popular author at the top.
-3. **On which days did more than 1% of requests lead to errors?** The
-   log table includes a column status that indicates the HTTP status
-   code that the news site sent to the user's browser. (Refer to this
-   lesson for more information about the idea of HTTP status codes.) 
-   
-### Tools to Install for Project Setup:
+## Project contents
 
-1. **Vagrant** - [Vagrant 2.2.3](https://releases.hashicorp.com/vagrant/2.2.3/vagrant_2.2.3_x86_64.msi)
-2. **VirtualBox** - [VirtualBox](https://www.virtualbox.org/wiki/Download_Old_Builds_5_1)
-3. Download vagrant setup files from **[Udacity's Github](https://github.com/udacity/fullstack-nanodegree-vm)**
-This files contains all configuration (Python3, Postgresql,PIP8 etc) setup for our project
-4. After downloading goto downnloads folder and extract the zip file name contans **LOGS_ANALYSIS**
-5. Keep it there (or) you can move to your own project path
-6. Download this project: [loganalysis_project](https://github.com/shyam6163/LogAnalysis)
+This project consists for the following files:
 
-### Process of executing the project:
-1. Goto Vagrant folder
-2. Open command prompt (or) Git Bash  
-3. Run **vagrant up** - to start the commandline virtual machine for the first it may take very long time depending on your internet connection
-4. Run **vagrant ssh** command to enter into the virtual machine
-5. Then run the project **python loganalysis_project.py**
+* LogAnalysis_Project.py - main file to run this Logs Analysis Reporting tool
+* README.md - instructions to install this reporting tool
+* output.txt - output file that will shown on the command prompt
+* newsdata.sql - database file
+
+## Required
+
+1. Python
+2. Vagrant
+3. VirtualBox
+
+## Installation
+
+There are some dependancies and a few instructions on how to run the application.
+
+## Dependencies
+
+- [Vagrant](https://www.vagrantup.com/)
+- [Udacity Vagrantfile](https://github.com/udacity/fullstack-nanodegree-vm)
+- [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+
+## How to Install
+1. Install Vagrant & VirtualBox
+2. Clone the Udacity Vagrantfile
+3. Go to Vagrant directory and either clone this repo or download and place zip here
+3. Launch the Vagrant VM (`vagrant up`)
+4. Log into Vagrant VM (`vagrant ssh`)
+5. Navigate to `cd /vagrant` as instructed in terminal
+
+## How to Run Project
+
+Download the project zip file to you computer and unzip the file then place inside `vagrant/LogAnalysis`.
+
+  1. Launch the Vagrant VM inside Vagrant sub-directory in the downloaded fullstack-nanodegree-vm repository using command:
+  
+  ```
+    $ vagrant up
+  ```
+  2. Then Log into this using command:
+  
+  ```
+    $ vagrant ssh
+  ```
+  3. download database from [here](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip).
+
+  4. Unzip this file after downloading it. The file inside is called newsdata.sql.
+
+  5. Copy the newsdata.sql file and place inside `vagrant/LogAnalysis`.
+
+  6. In terminal Change directory to `vagrant/LogAnalysis` and look around with ls.
+
+  7. Load the data in local database using the command:
+
+  ```
+    $ psql -d news -f newsdata.sql
+  ```
+   8. Run newsdata.py using:
+  ```
+    $ python newsdata.py
+  ```
+  Note: queries will take sometime to execute 
 
 
-Note:  it takes some time to show the output.
+## Miscellaneous
+
+This README document is based on a template suggested by PhilipCoach in this.
 
 
