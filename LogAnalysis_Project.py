@@ -63,7 +63,6 @@ def top_authors():
         print('(' + str(count) + ') ' + i[0] + ' :: ' + str(i[1]) + " views")
         count += 1
 
-
 def percentage_errors():
     """Percentage of Days Error  which leads more than 1% of requests"""
 
@@ -86,7 +85,6 @@ def percentage_errors():
         WHERE (ROUND(((errors.Error_Requests*1.0) / total.Requests), 3) > 0.01)
         ORDER BY Percent DESC;
     """
-
     # Run Query
     results = run_query(query1)
 
