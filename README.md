@@ -38,6 +38,6 @@ This files contains all configuration (Python3, Postgresql,PIP8 etc) setup for o
 5. Then run the project **python loganalysis_project.py**
 
 
-###Note:  it takes some time to show the output.
+Note:  it takes some time to show the output.
 
 
