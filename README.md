@@ -2,7 +2,7 @@
 By CH.Shyam Prasad
 This is the project from udacity NanoDegree : [Fullstack Web Developer](https://classroom.udacity.com/nanodegrees/nd004/dashboard/overview)
 
-#### Your task is to create a reporting tool that prints out reports (in plain text) 
+### Your task is to create a reporting tool that prints out reports (in plain text) 
 
 based on the data in the database. This reporting tool is a
 Python program using the psycopg2 module to connect to the database. 
