@@ -36,10 +36,10 @@ This files contains all configuration (Python3, Postgresql,PIP8 etc) setup for o
 3. Run **vagrant up** - It is used to start the commandline virtual machine for the first it may take very long time depending on your internet connection
 4. Run **vagrant ssh** It is the command to enter into the virtual machine
 5.use command 'psql -d news -f newsdata.sql' to load database
--use '\c' to connect to database="news"
--use '\dt' to see the tables in database
--use '\dv' to see the views in database
--use '\q' to quit the database
+  -use '\c' to connect to database="news"
+  -use '\dt' to see the tables in database
+  -use '\dv' to see the views in database
+  -use '\q' to quit the database
 6. Then run the project **python LogAnalysis_Project.py**
 
 
