@@ -40,7 +40,7 @@ This files contains all configuration (Python3, Postgresql,PIP8 etc) setup for o
 
 Note: It takes some time to run queries.
 
-### Outpt that you got from the execution:
+### Output data from the execution:
 The Results are as follows:
 
 
